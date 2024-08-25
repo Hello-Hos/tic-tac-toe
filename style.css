@@ -65,3 +65,11 @@ body{
 .hide{
     display: none;
 }
+
+.x-color{
+    color: red;
+}
+
+.o-color{
+    color: blue;
+}

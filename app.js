@@ -29,9 +29,11 @@ boxes.forEach((box) => {
         // console.log("box was clicked");
          if(turnO){
             box.innerText = "O";
+            box.classList.add("o-color");
             turnO= false;
          }else{
             box.innerText= "X";
+            box.classList.add("x-color");
             turnO=true;
          }
          box.disabled=true;
@@ -51,6 +53,7 @@ const enableboxes= () =>{
     for(let box of boxes){
         box.disabled = false;
         box.innerText="";
+        box.classList.remove("x-color","o-color");
     }
 }
 const showwinner=(winner) => {
